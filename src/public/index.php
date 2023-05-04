@@ -25,42 +25,6 @@ $tweets = [
         'created_at' => '2022/10/25',
     ],
 ]; 
-
-$tweets= createTweetSatou($tweets);
-
-// $tweetSatou = [];
-
-// foreach($tweets as $tweet) {
-//     // if ($tweet["userName"] == "さとう") {
-//     //     $tweetSatou [] = $tweet;
-//     // }
-//     if (isSatou($tweet)) {
-//         $tweetSatou [] = $tweet;
-        
-//     }
-    
-// }
-
-function isSatou(array $tweet): bool 
-{
-    return $tweet["userName"] == "さとう";
-}
-
-function createTweetSatou(array $tweets): array 
-{
-    $tweetSatou = [];
-    foreach($tweets as $tweet) {
-        // if ($tweet["userName"] == "さとう") {
-        //     $tweetSatou [] = $tweet;
-        // }
-        if (isSatou($tweet)) {
-            $tweetSatou [] = $tweet;
-            
-        }
-        
-    }
-    return $tweetSatou;
-}
 ?>
 
 
