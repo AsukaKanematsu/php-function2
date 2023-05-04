@@ -50,9 +50,7 @@ function createTweetSatou(array $tweets): array
 {
     $tweetSatou = [];
     foreach($tweets as $tweet) {
-        // if ($tweet["userName"] == "さとう") {
-        //     $tweetSatou [] = $tweet;
-        // }
+      
         if (isSatou($tweet)) {
             $tweetSatou [] = $tweet;
             
